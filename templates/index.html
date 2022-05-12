@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>CONTADOR</title>
+</head>
+<body>
+    <div>
+        <h1>Contador de Visitas</h1>
+    </div>
+
+    <p>{{session['count']}} Veces</p>
+    
+    <div class="botonera">
+        <a href="/" class="button_click" type="button">CLICK</a>
+        <a href="/dobleclick" class="button_dobleclick" type="button">DOBLE CLICK</a>
+        <a href="/reset" class="button_reset" type="button">RESET</a>
+    </div>
+    <form action="/formulario" method ="POST" class="formulario">
+        <input name='cantidad' type="number" >
+        <input type="submit" value="Enviar" >
+    </form>
+
+
+    <p>{{session['count_dos']}} Contador Robot</p>
+
+</body>
+</html>

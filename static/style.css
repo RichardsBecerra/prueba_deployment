@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 10px;
+}
+
+
+h1, p {
+    text-align: center;
+}
+
+.botonera{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button_click{
+    color: white;
+    background-color: green;
+    border-radius: 2px;
+    border: 1px solid black;
+    text-decoration: none;
+
+} 
+.button_dobleclick{
+    color: white;
+    background-color: blue;
+    border-radius: 2px;
+    border: 1px solid black;
+    text-decoration: none;
+} 
+.button_reset{
+    color: white;
+    background-color: red;
+    border-radius: 2px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.formulario{
+    display: grid;
+    align-items: center;    
+    justify-content: center;
+}
